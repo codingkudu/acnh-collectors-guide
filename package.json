@@ -2,7 +2,7 @@
   "name": "acnh-collectors-guide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://codingkudu.github.io/acnh-collectors-guide",
+  "homepage": "https://codingkudu.github.io/acnh-collectors-guide",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
