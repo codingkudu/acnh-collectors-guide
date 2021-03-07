@@ -7,6 +7,8 @@ This app is a guide for ACNH players for collecting fish.
 The hemisphere is defaulted to the Northern hemishpere and can be changed. 
 Fish that are availiable all year have been filtered out. 
 
+See here: https://codingkudu.github.io/acnh-collectors-guide
+
 
 # Getting Started with Create React App
 
