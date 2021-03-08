@@ -17,6 +17,7 @@ const FishGuide: React.FC<{}> = () => {
       <main>
         <div>
           <h3>Fish Guide</h3>
+          <h5>Fish availiable this month</h5>
         </div>
         <div>
           {service.status === 'loading' && (
