@@ -4,13 +4,13 @@ import AcnhHeader from './components/AcnhHeader/AcnhHeader';
 import FishGuide from './components/FishGuide/FishGuide';
 import Footer from './components/Footer/Footer';
 import Settings from './components/Settings/Settings';
-import { Theme, ThemeContext } from './context/ThemeContext';
+import { Hemisphere, ThemeContext } from './context/ThemeContext';
 
 function App() {
-  const [theme, setTheme] = React.useState(Theme.North);
+  const [theme, setTheme] = React.useState({ hemisphere: Hemisphere.North, featureCarousel: false });
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ themes: theme, setTheme }}>
       <div className="App" data-testid="App">
         <AcnhHeader />
         <Settings />

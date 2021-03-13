@@ -1,16 +1,11 @@
 import React from 'react';
 import styles from './FishGuide.module.css';
 import GetFishService from '../../services/getFishService';
-import FishCard from '../FishCard/FishCard';
-import { Theme, useTheme } from '../../context/ThemeContext';
+import FishCards from '../FishCards/FishCards';
 
 const FishGuide: React.FC<{}> = () => {
 
   const service = GetFishService();
-
-  const { theme } = useTheme();
-  const OFFSET = 1;
-  const currMonth = new Date().getMonth() + OFFSET;
 
   return (
     < div className={styles.FishGuide} data-testid="FishGuide" >
@@ -25,20 +20,11 @@ const FishGuide: React.FC<{}> = () => {
               <div>Loading</div>
             </div>
           )}
-          {service.status === 'loaded'
-            && service.payload?.filter(fish => fish.availability.isAllYear === false)
-              .filter(fish => {
-                if (theme === Theme.North) {
-                  return fish.availability['month-array-northern'].includes(currMonth)
-                } else {
-                  return fish.availability['month-array-southern'].includes(currMonth)
-                }
-              })
-              .map(fish => (
-                <div className="fish-item">
-                  <FishCard fishprop={fish} />
-                </div>
-              ))}
+          {
+            service.status === 'loaded'
+            && !!service.payload
+            && (<FishCards fishes={service.payload} />)
+          }
           {service.status === 'loaded' && !service.payload && (
             <div>Error empty array returned</div>
           )}

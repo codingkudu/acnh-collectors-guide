@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonGroup, Row, Container, ToggleButton } from 'react-bootstrap';
 import styles from './Settings.module.css';
-import { Theme, useTheme } from '../../context/ThemeContext';
+import { Hemisphere, useTheme } from '../../context/ThemeContext';
 
 interface Props {
 }
@@ -11,10 +11,15 @@ const Settings: React.FC<Props> = () => {
   const formatter = new Intl.DateTimeFormat('en', { month: 'long' });
 
   // Context API
-  const { theme, setTheme } = useTheme();
-  const radios = [
-    { name: 'North', value: Theme.North },
-    { name: 'South', value: Theme.South },
+  const { themes: theme, setTheme } = useTheme();
+  const hemisphereRadios = [
+    { name: 'North', value: Hemisphere.North },
+    { name: 'South', value: Hemisphere.South },
+  ];
+
+  const carsouelRadios = [
+    { name: 'On', value: 'true' },
+    { name: 'Off', value: 'false' },
   ];
 
   return (
@@ -26,17 +31,35 @@ const Settings: React.FC<Props> = () => {
       </Container>
       <Container>
         <Row>
-          <h4 className={styles.h4}>Hemisphere:</h4>
+          <b className={styles.header}>Hemisphere:</b>
           <ButtonGroup toggle>
-            {radios.map((radio, idx) => (
+            {hemisphereRadios.map((radio, idx) => (
               <ToggleButton
                 key={idx}
                 type="radio"
                 variant="secondary"
                 name="radio"
                 value={radio.value}
-                checked={theme === radio.value}
-                onChange={() => setTheme(radio.value)}
+                checked={theme.hemisphere === radio.value}
+                onChange={() => setTheme({ hemisphere: radio.value, featureCarousel: theme.featureCarousel })}
+              >
+                {radio.name}
+              </ToggleButton>
+            ))}
+          </ButtonGroup>
+        </Row>
+        <Row>
+          <b className={styles.header}>Feat. toggle Carousel:</b>
+          <ButtonGroup toggle>
+            {carsouelRadios.map((radio, idx) => (
+              <ToggleButton
+                key={idx}
+                type="radio"
+                variant="secondary"
+                name="radio"
+                value={radio.value}
+                checked={theme.featureCarousel.toString() === radio.value}
+                onChange={() => setTheme({ hemisphere: theme.hemisphere, featureCarousel: radio.value === 'true' })}
               >
                 {radio.name}
               </ToggleButton>
