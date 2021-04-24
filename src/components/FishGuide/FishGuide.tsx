@@ -5,7 +5,7 @@ import FishCards from '../FishCards/FishCards';
 
 const FishGuide: React.FC<{}> = () => {
 
-  const service = GetFishService();
+  const fishService = GetFishService();
 
   return (
     < div className={styles.FishGuide} data-testid="FishGuide" >
@@ -15,20 +15,20 @@ const FishGuide: React.FC<{}> = () => {
           <h5>Fish availiable this month</h5>
         </div>
         <div>
-          {service.status === 'loading' && (
+          {fishService.status === 'loading' && (
             <div className="loader-container">
               <div>Loading</div>
             </div>
           )}
           {
-            service.status === 'loaded'
-            && !!service.payload
-            && (<FishCards fishes={service.payload} />)
+            fishService.status === 'loaded'
+            && !!fishService.payload
+            && (<FishCards fishes={fishService.payload} />)
           }
-          {service.status === 'loaded' && !service.payload && (
+          {fishService.status === 'loaded' && !fishService.payload && (
             <div>Error empty array returned</div>
           )}
-          {service.status === 'error' && (
+          {fishService.status === 'error' && (
             <div>Oh no, error in calling endpoint</div>
           )}
         </div>
