@@ -17,31 +17,31 @@ const FishCard: React.FC<IFishCardProps> = ({ fishprop: fish }: IFishCardProps) 
           </Col>
           <Col className={styles.details}>
             <div>
-              Name: {fish.name['name-EUen']}
+              <b>Name:</b> {fish.name['name-EUen']}
             </div>
             <div>
-              Id: {fish.id}
+              <b>Id:</b> {fish.id}
             </div>
             <div>
-              All day: {fish.availability.isAllDay.toString()}
+              <b>All day:</b> {printAsYesOrNo(fish.availability.isAllDay)}
             </div>
             <div>
-              All year: {fish.availability.isAllYear.toString()}
+              <b>All year:</b> {printAsYesOrNo(fish.availability.isAllYear)}
             </div>
             <div>
-              Southern Hemisphere Months: {fish.availability['month-array-southern'].join(",")}
+              <b>Southern Hemisphere Months:</b> {printAsMonthRange(fish.availability['month-array-southern'])}
             </div>
             <div>
-              Northern Hemisphere Months: {fish.availability['month-array-northern'].join(",")}
+              <b>Northern Hemisphere Months:</b> {printAsMonthRange(fish.availability['month-array-northern'])}
             </div>
             <div>
-              Location: {fish.availability.location}
+              <b>Location:</b> {fish.availability.location}
             </div>
             <div>
-              Time: {fish.availability.time}
+              <b>Time:</b> {fish.availability.time}
             </div>
             <div>
-              Shadow: {fish.shadow}
+              <b>Shadow:</b> {fish.shadow}
             </div>
           </Col>
         </Row>
@@ -49,5 +49,14 @@ const FishCard: React.FC<IFishCardProps> = ({ fishprop: fish }: IFishCardProps) 
     </div>
   );
 };
+
+function printAsYesOrNo(value: boolean): string {
+  return value ? 'Yes' : 'No';
+}
+
+function printAsMonthRange(months: number[]): string {
+  const mnths = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return mnths[months[0]] + '-' + mnths[months[months.length - 1]];
+}
 
 export default FishCard;
