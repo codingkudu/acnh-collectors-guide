@@ -1,25 +1,39 @@
 {
   "files": {
     "main.css": "/acnh-collectors-guide/static/css/main.1aa51d69.chunk.css",
-    "main.js": "/acnh-collectors-guide/static/js/main.0f77d84d.chunk.js",
-    "main.js.map": "/acnh-collectors-guide/static/js/main.0f77d84d.chunk.js.map",
-    "runtime-main.js": "/acnh-collectors-guide/static/js/runtime-main.aa60efbd.js",
-    "runtime-main.js.map": "/acnh-collectors-guide/static/js/runtime-main.aa60efbd.js.map",
+    "main.js": "/acnh-collectors-guide/static/js/main.f1652bf0.chunk.js",
+    "main.js.map": "/acnh-collectors-guide/static/js/main.f1652bf0.chunk.js.map",
+    "runtime-main.js": "/acnh-collectors-guide/static/js/runtime-main.23b6c7cc.js",
+    "runtime-main.js.map": "/acnh-collectors-guide/static/js/runtime-main.23b6c7cc.js.map",
     "static/css/2.150d169a.chunk.css": "/acnh-collectors-guide/static/css/2.150d169a.chunk.css",
-    "static/js/2.5f41cd83.chunk.js": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js",
-    "static/js/2.5f41cd83.chunk.js.map": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js.map",
-    "static/js/3.862c35b0.chunk.js": "/acnh-collectors-guide/static/js/3.862c35b0.chunk.js",
-    "static/js/3.862c35b0.chunk.js.map": "/acnh-collectors-guide/static/js/3.862c35b0.chunk.js.map",
+    "static/js/2.1818158e.chunk.js": "/acnh-collectors-guide/static/js/2.1818158e.chunk.js",
+    "static/js/2.1818158e.chunk.js.map": "/acnh-collectors-guide/static/js/2.1818158e.chunk.js.map",
+    "static/js/3.56f6a249.chunk.js": "/acnh-collectors-guide/static/js/3.56f6a249.chunk.js",
+    "static/js/3.56f6a249.chunk.js.map": "/acnh-collectors-guide/static/js/3.56f6a249.chunk.js.map",
     "index.html": "/acnh-collectors-guide/index.html",
     "static/css/2.150d169a.chunk.css.map": "/acnh-collectors-guide/static/css/2.150d169a.chunk.css.map",
     "static/css/main.1aa51d69.chunk.css.map": "/acnh-collectors-guide/static/css/main.1aa51d69.chunk.css.map",
-    "static/js/2.5f41cd83.chunk.js.LICENSE.txt": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js.LICENSE.txt"
+    "static/js/2.1818158e.chunk.js.LICENSE.txt": "/acnh-collectors-guide/static/js/2.1818158e.chunk.js.LICENSE.txt",
+    "static/media/barred_knifejaw.5c3d6c76.png": "/acnh-collectors-guide/static/media/barred_knifejaw.5c3d6c76.png",
+    "static/media/betta.2063138f.png": "/acnh-collectors-guide/static/media/betta.2063138f.png",
+    "static/media/blue_marlin.1d462521.png": "/acnh-collectors-guide/static/media/blue_marlin.1d462521.png",
+    "static/media/catfish.034287f1.png": "/acnh-collectors-guide/static/media/catfish.034287f1.png",
+    "static/media/football_fish.7e3dc85c.png": "/acnh-collectors-guide/static/media/football_fish.7e3dc85c.png",
+    "static/media/giant_trevally.29b7e785.png": "/acnh-collectors-guide/static/media/giant_trevally.29b7e785.png",
+    "static/media/mahi-mahi.48eaff90.png": "/acnh-collectors-guide/static/media/mahi-mahi.48eaff90.png",
+    "static/media/oarfish.0bab6133.png": "/acnh-collectors-guide/static/media/oarfish.0bab6133.png",
+    "static/media/pike.9deba483.png": "/acnh-collectors-guide/static/media/pike.9deba483.png",
+    "static/media/ray.ac6919d1.png": "/acnh-collectors-guide/static/media/ray.ac6919d1.png",
+    "static/media/snapping_turtle.199f01fa.png": "/acnh-collectors-guide/static/media/snapping_turtle.199f01fa.png",
+    "static/media/soft_shelled_turtle.63f4aef7.png": "/acnh-collectors-guide/static/media/soft_shelled_turtle.63f4aef7.png",
+    "static/media/squid.a19d23ba.png": "/acnh-collectors-guide/static/media/squid.a19d23ba.png",
+    "static/media/tuna.38b9ac22.png": "/acnh-collectors-guide/static/media/tuna.38b9ac22.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa60efbd.js",
+    "static/js/runtime-main.23b6c7cc.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.5f41cd83.chunk.js",
+    "static/js/2.1818158e.chunk.js",
     "static/css/main.1aa51d69.chunk.css",
-    "static/js/main.0f77d84d.chunk.js"
+    "static/js/main.f1652bf0.chunk.js"
   ]
 }
