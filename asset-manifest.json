@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/acnh-collectors-guide/static/css/main.1aa51d69.chunk.css",
-    "main.js": "/acnh-collectors-guide/static/js/main.3c5594a5.chunk.js",
-    "main.js.map": "/acnh-collectors-guide/static/js/main.3c5594a5.chunk.js.map",
-    "runtime-main.js": "/acnh-collectors-guide/static/js/runtime-main.aa60efbd.js",
-    "runtime-main.js.map": "/acnh-collectors-guide/static/js/runtime-main.aa60efbd.js.map",
+    "main.js": "/acnh-collectors-guide/static/js/main.93a8270d.chunk.js",
+    "main.js.map": "/acnh-collectors-guide/static/js/main.93a8270d.chunk.js.map",
+    "runtime-main.js": "/acnh-collectors-guide/static/js/runtime-main.60ed7243.js",
+    "runtime-main.js.map": "/acnh-collectors-guide/static/js/runtime-main.60ed7243.js.map",
     "static/css/2.150d169a.chunk.css": "/acnh-collectors-guide/static/css/2.150d169a.chunk.css",
-    "static/js/2.5f41cd83.chunk.js": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js",
-    "static/js/2.5f41cd83.chunk.js.map": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js.map",
-    "static/js/3.862c35b0.chunk.js": "/acnh-collectors-guide/static/js/3.862c35b0.chunk.js",
-    "static/js/3.862c35b0.chunk.js.map": "/acnh-collectors-guide/static/js/3.862c35b0.chunk.js.map",
+    "static/js/2.6d0e27dd.chunk.js": "/acnh-collectors-guide/static/js/2.6d0e27dd.chunk.js",
+    "static/js/2.6d0e27dd.chunk.js.map": "/acnh-collectors-guide/static/js/2.6d0e27dd.chunk.js.map",
+    "static/js/3.3ec6727c.chunk.js": "/acnh-collectors-guide/static/js/3.3ec6727c.chunk.js",
+    "static/js/3.3ec6727c.chunk.js.map": "/acnh-collectors-guide/static/js/3.3ec6727c.chunk.js.map",
     "index.html": "/acnh-collectors-guide/index.html",
     "static/css/2.150d169a.chunk.css.map": "/acnh-collectors-guide/static/css/2.150d169a.chunk.css.map",
     "static/css/main.1aa51d69.chunk.css.map": "/acnh-collectors-guide/static/css/main.1aa51d69.chunk.css.map",
-    "static/js/2.5f41cd83.chunk.js.LICENSE.txt": "/acnh-collectors-guide/static/js/2.5f41cd83.chunk.js.LICENSE.txt"
+    "static/js/2.6d0e27dd.chunk.js.LICENSE.txt": "/acnh-collectors-guide/static/js/2.6d0e27dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa60efbd.js",
+    "static/js/runtime-main.60ed7243.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.5f41cd83.chunk.js",
+    "static/js/2.6d0e27dd.chunk.js",
     "static/css/main.1aa51d69.chunk.css",
-    "static/js/main.3c5594a5.chunk.js"
+    "static/js/main.93a8270d.chunk.js"
   ]
 }
