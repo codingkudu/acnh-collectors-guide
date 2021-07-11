@@ -41,9 +41,9 @@ const FishCards: React.FC<FishCardsProps> = ({ fishes }: FishCardsProps) => {
     featureSwitch =
       <div>
         <b>Swipe up ⬆ or down ⬇ to fish</b>
-        {filterFish.map(fish => (
-          <div className="fish-item">
-            <FishCard fishprop={fish} />
+        {filterFish.map((fish, index) => (
+          <div className="fish-item" key={index}>
+            <FishCard fishprop={fish}/>
           </div>)
         )}
       </div >
