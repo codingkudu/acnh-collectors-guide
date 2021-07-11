@@ -29,7 +29,7 @@ const FishCards: React.FC<FishCardsProps> = ({ fishes }: FishCardsProps) => {
   if (theme.featureCarousel && filterFish.length > 0) {
     featureSwitch =
       <div>
-        <b>Swipe left ⬅ or right ➡ to see next fish</b>
+        <b>Swipe LEFT ⬅ or RIGHT ➡ to see next fish</b>
         <Carousel>
           {filterFish.map(fish => (
             <Carousel.Item>
@@ -40,10 +40,10 @@ const FishCards: React.FC<FishCardsProps> = ({ fishes }: FishCardsProps) => {
   } else {
     featureSwitch =
       <div>
-        <b>Swipe up ⬆ or down ⬇ to fish</b>
+        <b>Swipe UP ⬆ or DOWN ⬇ to see fish</b>
         {filterFish.map((fish, index) => (
           <div className="fish-item" key={index}>
-            <FishCard fishprop={fish}/>
+            <FishCard fishprop={fish} />
           </div>)
         )}
       </div >
