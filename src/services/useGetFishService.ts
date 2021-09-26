@@ -10,7 +10,7 @@ export interface Fishs {
     results: Fish[];
 }
 
-const GetFishService = () => {
+const useGetFishService = () => {
     const [result, setResult] = useState<Service<Fish[]>>({
         status: 'loading'
     });
@@ -25,4 +25,4 @@ const GetFishService = () => {
     return result;
 };
 
-export default GetFishService;
+export default useGetFishService;

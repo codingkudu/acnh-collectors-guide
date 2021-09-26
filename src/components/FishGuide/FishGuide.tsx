@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './FishGuide.module.css';
-import GetFishService from '../../services/getFishService';
+import useGetFishService from '../../services/useGetFishService';
 import FishCards from '../FishCards/FishCards';
 
 const FishGuide: React.FC<{}> = () => {
 
-  const fishService = GetFishService();
+  const fishService = useGetFishService();
 
   return (
     < div className={styles.FishGuide} data-testid="FishGuide" >
