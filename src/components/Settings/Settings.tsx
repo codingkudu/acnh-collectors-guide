@@ -30,9 +30,9 @@ const Settings: React.FC<Props> = () => {
         </Row>
       </Container>
       <Container>
-        <Row>
-          <b className={styles.header}>Hemisphere:</b>
-          <ButtonGroup toggle>
+        <Row className={styles.row}>
+          <ButtonGroup toggle className={styles.centerMe}>  
+            <b className={styles.header}>Hemisphere:</b>
             {hemisphereRadios.map((radio, idx) => (
               <ToggleButton
                 key={idx}
@@ -48,9 +48,9 @@ const Settings: React.FC<Props> = () => {
             ))}
           </ButtonGroup>
         </Row>
-        <Row>
-          <b className={styles.header}>Feat. toggle Carousel:</b>
-          <ButtonGroup toggle>
+        <Row className={styles.row}>
+          <ButtonGroup toggle className={styles.centerMe}>
+            <b className={styles.header}>Feature toggle Carousel:</b>
             {carsouelRadios.map((radio, idx) => (
               <ToggleButton
                 key={idx}

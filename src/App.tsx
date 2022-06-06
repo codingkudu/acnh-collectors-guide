@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AcnhHeader from './components/AcnhHeader/AcnhHeader';
-import FishGuide from './components/FishGuide/FishGuide';
+import CollectableViews from './components/CollectableViews/CollectableViews';
 import Footer from './components/Footer/Footer';
 import Settings from './components/Settings/Settings';
 import { Hemisphere, ThemeContext } from './context/ThemeContext';
@@ -14,7 +14,7 @@ function App() {
       <div className="App" data-testid="App">
         <AcnhHeader />
         <Settings />
-        <FishGuide />
+        <CollectableViews />
         <Footer />
       </div>
     </ThemeContext.Provider >

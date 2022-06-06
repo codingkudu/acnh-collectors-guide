@@ -11,6 +11,18 @@
   .header {
     text-align: center;
     align-items: center;
-    padding-right: 5px;
+    padding: 5px;
     margin-bottom: 0px;
+    margin: auto;
+  }
+
+  .row {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .centerMe {
+    /* margin: auto; */
+    width: 90%;
+    padding: 2px;
   }

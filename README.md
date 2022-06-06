@@ -1,14 +1,13 @@
 # ACNH: Collectors Guide
 
-A react typescript project that I have been using to play around with React functional components, JSX, hooks and Context API. 
-Made with react-bootstrap. Plans for future improvements would add more unit testing, maybe a month selector, expand to include a insect guide, look at performance improvements with loading images, explore StoryBoards more. 
+A react typescript project that I have been using to play around with React functional components, JSX, hooks and Context API.
+Made with react-bootstrap. Plans for future improvements would add more unit testing, maybe a month selector, expand to include a insect guide, look at performance improvements with loading images, explore StoryBoards more, replace react-bootstap with material UI.
 
-This app is a guide for ACNH players for collecting fish.
-The hemisphere is defaulted to the Northern hemishpere and can be changed. 
-Fish that are availiable all year have been filtered out. 
+This app is a guide for ACNH players for collecting fish, bugs and sea creatures.
+The hemisphere is defaulted to the Northern hemishpere and can be changed.
+Fish/Bugs/Sea Creatures that are availiable all year have been filtered out.
 
 See here: https://codingkudu.github.io/acnh-collectors-guide
-
 
 # Getting Started with Create React App
 
