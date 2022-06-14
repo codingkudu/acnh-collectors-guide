@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonGroup, Row, Container, ToggleButton } from 'react-bootstrap';
+import { ButtonGroup, Row, Container, ToggleButton, Col } from 'react-bootstrap';
 import styles from './Settings.module.css';
 import { Hemisphere, useTheme } from '../../context/ThemeContext';
 
@@ -23,7 +23,7 @@ const Settings: React.FC<Props> = () => {
   ];
 
   return (
-    <div className={styles.Settings} data-testid="Settings">
+    <div data-testid="Settings">
       <Container>
         <Row>
           <h4>Month: {formatter.format(new Date())}</h4>
@@ -31,40 +31,48 @@ const Settings: React.FC<Props> = () => {
       </Container>
       <Container>
         <Row className={styles.row}>
-          <ButtonGroup toggle className={styles.centerMe}>  
+          <Col sm={4}>
             <b className={styles.header}>Hemisphere:</b>
-            {hemisphereRadios.map((radio, idx) => (
-              <ToggleButton
-                key={idx}
-                type="radio"
-                variant="secondary"
-                name="radio"
-                value={radio.value}
-                checked={theme.hemisphere === radio.value}
-                onChange={() => setTheme({ hemisphere: radio.value, featureCarousel: theme.featureCarousel })}
-              >
-                {radio.name}
-              </ToggleButton>
-            ))}
-          </ButtonGroup>
+          </Col>
+          <Col sm={8}>
+            <ButtonGroup toggle className={styles.buttonGroupToggle}>  
+              {hemisphereRadios.map((radio, idx) => (
+                <ToggleButton
+                  key={idx}
+                  type="radio"
+                  variant="secondary"
+                  name="radio"
+                  value={radio.value}
+                  checked={theme.hemisphere === radio.value}
+                  onChange={() => setTheme({ hemisphere: radio.value, featureCarousel: theme.featureCarousel })}
+                >
+                  {radio.name}
+                </ToggleButton>
+              ))}
+            </ButtonGroup>
+          </Col>
         </Row>
         <Row className={styles.row}>
-          <ButtonGroup toggle className={styles.centerMe}>
-            <b className={styles.header}>Feature toggle Carousel:</b>
-            {carsouelRadios.map((radio, idx) => (
-              <ToggleButton
-                key={idx}
-                type="radio"
-                variant="secondary"
-                name="radio"
-                value={radio.value}
-                checked={theme.featureCarousel.toString() === radio.value}
-                onChange={() => setTheme({ hemisphere: theme.hemisphere, featureCarousel: radio.value === 'true' })}
-              >
-                {radio.name}
-              </ToggleButton>
-            ))}
-          </ButtonGroup>
+          <Col sm={4}>
+          <b className={styles.header}>Feature toggle Carousel:</b>
+          </Col>
+          <Col sm={8}>
+            <ButtonGroup toggle className={styles.buttonGroupToggle}>
+              {carsouelRadios.map((radio, idx) => (
+                <ToggleButton
+                  key={idx}
+                  type="radio"
+                  variant="secondary"
+                  name="radio"
+                  value={radio.value}
+                  checked={theme.featureCarousel.toString() === radio.value}
+                  onChange={() => setTheme({ hemisphere: theme.hemisphere, featureCarousel: radio.value === 'true' })}
+                >
+                  {radio.name}
+                </ToggleButton>
+              ))}
+            </ButtonGroup>
+          </Col>
         </Row>
       </Container>
     </div>

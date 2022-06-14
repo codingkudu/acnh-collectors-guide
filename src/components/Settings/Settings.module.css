@@ -1,16 +1,4 @@
-.Settings {
-    text-align: start;
-    justify-content: flex-start
-}
-
-.container {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
   .header {
-    text-align: center;
-    align-items: center;
     padding: 5px;
     margin-bottom: 0px;
     margin: auto;
@@ -21,8 +9,7 @@
     padding-bottom: 2px;
   }
 
-  .centerMe {
-    /* margin: auto; */
+  .buttonGroupToggle {
     width: 90%;
     padding: 2px;
   }
