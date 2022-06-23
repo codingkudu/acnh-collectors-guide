@@ -13,31 +13,31 @@ const CollectableCard: FC<CollectableCardProps> = ({collectable}: CollectableCar
       <Container>
         <Row className={styles.row}>
           <Col>
-            <img src={collectable.icon_uri} alt={collectable.name['name-EUen']}></img>
+            <img src={collectable.icon_uri} alt={collectable.name['name-EUen']} data-testid="CollectableImage"></img>
           </Col>
           <Col className={styles.details}>
-            <div>
+            <div data-testid="CollectableName">
               <b>Name:</b> {collectable.name['name-EUen']}
             </div>
-            <div>
+            <div data-testid="CollectableId">
               <b>Id:</b> {collectable.id}
             </div>
-            <div>
+            <div data-testid="CollectableAllDay">
               <b>All day:</b> {printAsYesOrNo(collectable.availability.isAllDay)}
             </div>
-            <div>
+            <div data-testid="CollectableAllYear">
               <b>All year:</b> {printAsYesOrNo(collectable.availability.isAllYear)}
             </div>
-            <div>
+            <div data-testid="CollectableSouth">
               <b>Southern Hemisphere Months:</b> {printAsMonthRange(collectable.availability['month-array-southern'])}
             </div>
-            <div>
+            <div data-testid="CollectableNorth">
               <b>Northern Hemisphere Months:</b> {printAsMonthRange(collectable.availability['month-array-northern'])}
             </div>
-            <div>
+            <div data-testid="CollectableLocation">
               <b>Location:</b> {collectable.availability.location}
             </div>
-            <div>
+            <div data-testid="CollectableTime">
               <b>Time:</b> {collectable.availability.time}
             </div>
             <div>
