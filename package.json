@@ -67,6 +67,19 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "src/reportWebVitals.ts",
+      "src/index.tsx",
+      "src/components/AcnhHeader/AcnhHeader.lazy.tsx",
+      "src/components/AcnhHeader/AcnhHeader.stories.tsx",
+      "src/components/Footer/Footer.lazy.tsx",
+      "src/components/Footer/Footer.stories.tsx",
+      "src/components/Settings/Settings.lazy.tsx",
+      "src/components/Settings/Settings.stories.tsx",
+      "src/stories/*"
+    ]
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
