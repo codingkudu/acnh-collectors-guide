@@ -12,17 +12,17 @@ const CollectableViews: FC<CollectableViewsProps> = () => {
   return (
     <div className={styles.CollectableViews} data-testid="CollectableViews">
       <div>
-        <Tabs defaultActiveKey="about" id="uncontrolled-tab-example" className="mb-3" fill>
-          <Tab eventKey="about" title="About">
+        <Tabs defaultActiveKey="about" id="uncontrolled-tab-example" className="mb-3" fill data-testid="tabs">
+          <Tab eventKey="about" title="About" data-testid="about-tab">
             <About />
           </Tab>
-          <Tab eventKey="fish" title="Fish">
+          <Tab eventKey="fish" title="Fish" data-testid="fish-tab">
             <CollectableGuide endpoint = {CollectionType.Fish}/>
           </Tab>
-          <Tab eventKey="bugs" title="Bugs">
-              <CollectableGuide endpoint = {CollectionType.Bugs}/>
+          <Tab eventKey="bugs" title="Bugs" data-testid="bug-tab">
+              <CollectableGuide endpoint = {CollectionType.Bugs} />
           </Tab>
-          <Tab eventKey="sea" title="Sea Creatures">
+          <Tab eventKey="sea" title="Sea Creatures" data-testid="sea-tab">
             <CollectableGuide endpoint = {CollectionType.SeaCreatures}/>
           </Tab>
         </Tabs>

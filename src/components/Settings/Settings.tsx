@@ -45,6 +45,7 @@ const Settings: React.FC<Props> = () => {
                   value={radio.value}
                   checked={theme.hemisphere === radio.value}
                   onChange={() => setTheme({ hemisphere: radio.value, featureCarousel: theme.featureCarousel })}
+                  data-testid={'hemisphere-' + radio.name}
                 >
                   {radio.name}
                 </ToggleButton>
@@ -67,6 +68,7 @@ const Settings: React.FC<Props> = () => {
                   value={radio.value}
                   checked={theme.featureCarousel.toString() === radio.value}
                   onChange={() => setTheme({ hemisphere: theme.hemisphere, featureCarousel: radio.value === 'true' })}
+                  data-testid={'carousel-' + radio.name}
                 >
                   {radio.name}
                 </ToggleButton>
